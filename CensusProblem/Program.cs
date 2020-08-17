@@ -89,7 +89,8 @@ namespace CensusProblem {
 			if ((i & 0b1_0000_0000_0000_0000_0000_0000) > 0) { solution.Add(populations[24]); }
 			if ((i & 0b10_0000_0000_0000_0000_0000_0000) > 0) { solution.Add(populations[25]); }
 			var str = string.Join(", ", solution);
-			Console.WriteLine($"In {ts}, the solution is {str}");
+			Console.WriteLine($"In {ts}, the solution is :\n {str}");
+			Console.ReadKey();
 		}
 
 		static void Main(string[] args) {
